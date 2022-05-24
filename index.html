@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running with Universal Studio - Main</title>
+  <meta name="description"
+    content="This is main webpage of the theme park that reveals exciting rides and unique running man exihibition">
+  <meta name="keywords"
+    content="theme-park, running-man, universal studio, universal theme-park, family, korean theme park">
+  <meta name="author" content="Web Development Tutorial Group web-develop-t5g7-dl7">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+  <!-- Insert main header -->
+  <div class="container">
+    <!-- Style - flexbox -->
+    <header class="main-header">
+      <a href="#"><img src=" images/main/Running with universal studio logo.png" alt="Picture of park logo"></a>
+      <!-- <h1>Running with Universal Studio</h1> -->
+
+
+      <!-- Insert main navigation bar -->
+      <nav class="nav-bar-box">
+        <ul class="nav-bar">
+          <li class="nav-bar-menus"><a href="index.html" class="nav-bar-links active">Home</a></li>
+          <li class="nav-bar-menus"><a href="rides.html" class="nav-bar-links">Rides and Attractions</a></li>
+          <li class="nav-bar-menus"><a href="bookings.html" class="nav-bar-links">Plan your visit</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Insert swiping bar Method 1 using CSS @frames-->
+    <!--  Refernce: https://www.youtube.com/watch?v=qDww4CbxtD4-->
+
+    <!-- <div class="swipe-bar">
+      <figure>
+        <img src="images/main/experience_runningman.jpg" alt="Picture of running man experience">
+        <img src="images/main/Running-Man-11th-Anniversary-cover.png" alt="Picture of running man members">
+
+      </figure>
+    </div> -->
+
+    <!-- Insert swiping bar Method 2 using javascript-->
+    <!--  Refernce: https://www.youtube.com/watch?v=VYsVOamdB0g -->
+
+    <div class="carousel">
+      <!-- Left arrow button -->
+      <button class="carousel__button carousel__button--left">
+        <img src="#" alt="left arrow">
+      </button>
+
+      <!-- Carousel sliding bar -->
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide">
+            <img src="images/main/experience_runningman.jpg" alt="Picture of running man experience">
+
+          </li>
+          <li class="carousel__slide">
+            <img src="images/main/Running-Man-11th-Anniversary-cover.png" alt="Picture of running man experience">
+
+          </li>
+        </ul>
+
+      </div>
+      <!-- Right arrow button -->
+      <button class="carousel__button carousel__button--right">
+        <img src="#" alt="right arrow">
+      </button>
+
+      <!-- Slide bar navigation indicator -->
+      <div class="carousel__nav">
+        <button class="carousel__indicator">1</button>
+        <button class="carousel__indicator">2</button>
+      </div>
+    </div>
+
+    <!-- Insert about park information -->
+    <section class="about-park">
+      <header class="about-park__header">
+        <h2>About Running with Universal Studio</h2>
+        <p class="about-park__description">Running with Universal Studio boasts the one and only theme park in the world
+          that blends in the world
+          renowned Korean variety TV-Show Running Man</p>
+        <p>Look no further to experience a mix of rides and experiences just like members of the Running Man</p>
+      </header>
+
+      <!-- Insert map -->
+      <div class="about-park__map">
+        <h3>Direction to Running with Universal Studio</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.724988308734!2d103.8186672702815!3d1.2541780726425127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1955a615a343%3A0x3094037d34e6529f!2sUniversal%20Studios%20Singapore!5e0!3m2!1sen!2ssg!4v1652459490756!5m2!1sen!2ssg"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Insert park activities information -->
+      <div class="about-park__activites">
+
+      </div>
+    </section>
+
+    <!-- Insert park vistor information -->
+
+    <section class="park-offering">
+      <h3>Visitor Information</h3>
+
+      <!-- Insert purchase park tickets -->
+      <div class="park-offering__box">
+        <img class="park-offering__image" src="images/main/park_ticket.jpg" alt="Picture of theme park tickets"
+          width="100" height="auto">
+        <p>Saves time at entry, pay online to go on an adventure with us!</p>
+      </div>
+
+      <!-- Insert dining in the park -->
+      <div class="park-offering__box">
+        <img class="park-offering__image" src="images/main/dining.jpg" alt="Picture of dining" width="100" height=auto>
+        <p>Discover an array of dining options here in Running with Universal Studio. Our restaurants offer products and
+          an explosion of interational flavours</p>
+      </div>
+
+      <!-- Insert free parking -->
+      <div class="park-offering__box">
+        <img class="park-offering__image" src="images/main/free_parking.png" alt="Picture of free parking" width="100"
+          height="auto">
+        <p>Free overnight parking is available</p>
+      </div>
+
+      <!-- Insert free Wifi -->
+      <div class="park-offering__box">
+        <img class="park-offering__image" src="images/main/free_wifi.jpg" alt="Picture of free wifi" width="100"
+          height="auto">
+        <p>Free wifi service</p>
+      </div>
+
+    </section>
+
+    <!-- Insert park review -->
+
+    <section class="park-review">
+      <aside class="park-review-box">
+        <h3>Review</h3>
+        <img src="images/main/review_author.jpg" alt="Picture of author who wrote the review" width="200" height="auto">
+        <!-- Add icon on review rating -->
+        <p class="park-review__rating">5/5!</p>
+        <p class="park-review__description">It has some of the most interesting experience enclosures I have ever been.
+          A great family destination and
+          place to go over the weekends! </p>
+      </aside>
+    </section>
+    <!-- Insert footer -->
+    <footer>
+      <!-- Insert Contact Us -->
+      <h3>Contact us</h3>
+      <a href="#">
+        <ion-icon name="mail-outline"></ion-icon>
+      </a>
+
+      <a href="#">
+        <ion-icon name="call-outline"></ion-icon>
+      </a>
+      <!-- Insert Follow Us and social media icons -->
+      <div class="footer-follow">
+        <h3>Follow us!</h3>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+      <!-- Insert Copyright statement -->
+      <p>Copyright &copy; 2022 All Rights Reserved By t5g7-dl7</p>
+    </footer>
+  </div>
+</body>
+
+</html>
